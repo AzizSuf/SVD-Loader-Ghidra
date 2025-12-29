@@ -84,7 +84,7 @@ def calculate_peripheral_size(peripheral, default_register_size):
 svd_file = askFile("Choose SVD file", "Load SVD File")
 
 print("Loading SVD file...")
-parser = SVDParser.for_xml_file(str(svd_file))
+parser = SVDParser.for_xml_file(svd_file.getAbsolutePath())
 print("\tDone!")
 
 # CM0, CM4, etc
